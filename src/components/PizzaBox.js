@@ -1,6 +1,8 @@
 import React from "react";
+import { OrderPizza } from "./redux/index.js";
 
-function PizzaBox(){
+function PizzaBox(props){
+    console.log(props)
     return(
         <div className='container'>
             <h2 className="text">Number of Pizza Base available - 100</h2>
@@ -13,6 +15,13 @@ function PizzaBox(){
 const mapStateToProps=(state)=>{
     return{
         pizzaBase:state.pizzaBase
+    }
+}
+
+//2.we got access to dispatching the action from redux store
+const mapDispatchToProps=(dispatch)=>{
+    return{
+        orderPizza:()=>dispatch(OrderPizza())
     }
 }
 
