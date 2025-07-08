@@ -1,5 +1,5 @@
 import React from "react";
-import { OrderPizza } from "./redux/index.js";
+import { OrderPizza } from "../redux/index.js";
 
 function PizzaBox(props){
     console.log(props)

@@ -1,1 +1,1 @@
-export {orderPizza} from './pizza/PizzaActions'
+export {OrderPizza} from './pizza/PizzaActions'
