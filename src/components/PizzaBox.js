@@ -9,4 +9,11 @@ function PizzaBox(){
     );
 };
 
+//1.we got access to our redux state
+const mapStateToProps=(state)=>{
+    return{
+        pizzaBase:state.pizzaBase
+    }
+}
+
 export default PizzaBox;
