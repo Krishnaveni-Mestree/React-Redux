@@ -1,9 +1,10 @@
 import './App.css';
+import PizzaBox from './components/PizzaBox';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello world</h1>
+      <PizzaBox/>
     </div>
   );
 }
