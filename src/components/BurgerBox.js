@@ -4,7 +4,6 @@ import {orderBurger} from '../redux/burger/BurgerActions.js'
 
 
 function BurgerBox(props){
-    console.log(props)
     return(
         <div className='container'>
             <h2 className="text">Number of Burger Buns available - {props.burgerBuns}</h2>

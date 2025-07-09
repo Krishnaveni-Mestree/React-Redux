@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 
 
 function PizzaBox(props){
-    console.log(props)
     return(
         <div className='container'>
             <h2 className="text">Number of Pizza Base available - {props.pizzaBase}</h2>
