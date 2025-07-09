@@ -8,7 +8,9 @@ function ProductsContainer({productsData,fetchProducts}) {
     },[]);
   return (
     <div>
-      
+      {productsData.loading && <p>Loading....</p>}
+      {productsData.error && <p>{productsData.error}</p>}
+      {productsData.products && <p>{productsData.products.map(title=><h1>{title}</h1>)}</p>}
     </div>
   )
 };
