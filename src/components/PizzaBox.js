@@ -16,7 +16,7 @@ function PizzaBox(props){
 //1.we got access to our redux state
 const mapStateToProps=(state)=>{
     return{
-        pizzaBase:state.pizzaBase //this prop will pass as prop to the component
+        pizzaBase:state.pizza.pizzaBase //this prop will pass as prop to the component
     }
 }
 
