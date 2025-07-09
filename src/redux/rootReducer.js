@@ -6,7 +6,7 @@ import productsReducer from "./products/ProductsReducer";
 const rootReducer=combineReducers({
     pizza:pizzaReducer,
     burger:burgerReducer,
-    products:productsReducer
+    product:productsReducer
 });
 
 export default rootReducer;

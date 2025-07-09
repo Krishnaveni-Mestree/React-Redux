@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { fetchProducts } from '../redux';
+import { connect } from 'react-redux';
 
-function ProductsContainer() {
+function ProductsContainer({productsData,fetchProducts}) {
+    useEffect(()=>{
+        fetchProducts()
+    },[]);
   return (
     <div>
       
     </div>
   )
+};
+
+const mapStateToProps=state=>{
+    return{
+       productsData:state.product
+    }
+};
+
+const mapDispatchToProps=dispatch=>{
+    return{
+        fetchProducts:()=>dispatch(fetchProducts())
+    }
 }
 
-export default ProductsContainer
+export default connect(mapStateToProps,mapDispatchToProps)(ProductsContainer)
